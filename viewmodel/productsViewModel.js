@@ -31,12 +31,19 @@ var itemOne = Todo({name:"Nike boots",
 });
 module.exports = function (app) {
     //show all products
-     
+     app.get("/api/products",function(req,res){
+        Todo.find({},function(err,data){
+            if (err) throw err;
+            res.send({products:data});
+console.log({store:data});
+        })
+    
+});  
 //show a single product /search for products
     app.get("/api/products/:name",function(req,res){
         Todo.find({name:req.params.name.replace(/\-/g," ")},function(err,data){
             if (err) throw err;
-            res.send({bank:data});
+            res.send({product:data});
 //console.log({storename:req.params.name});
         })
     
