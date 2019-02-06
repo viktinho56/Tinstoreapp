@@ -12,7 +12,7 @@ var bankSchema = new mongoose.Schema({
     });
    
 var  Todo = mongoose.model('Banks',bankSchema); 
-/*var itemOne = Todo({storename:"SPL Stores",
+var itemOne = Todo({storename:"SPL Stores",
                     storeid:"5c50b3d5c9931a0850761d94",
                     bankname:"Guaranty Trust Bank",
                     nuban:"0168977375",
@@ -20,7 +20,7 @@ var  Todo = mongoose.model('Banks',bankSchema);
                     }).save(function(err){
             if (err) throw err;
              console.log('bank saved');
-});*/
+});
 module.exports = function (app) {
     //show all stores
     app.get("/api/banks",function(req,res){
