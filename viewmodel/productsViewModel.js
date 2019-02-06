@@ -7,6 +7,7 @@ var productsSchema = new mongoose.Schema({
 
     name:String,
     category:String,
+    avatar:String,
     price:Number,
     quantity:Number,
     description:String,
@@ -18,6 +19,7 @@ var productsSchema = new mongoose.Schema({
 var  Todo = mongoose.model('Products',productsSchema); 
 var itemOne = Todo({name:"Nike boots",
                     category:"Shoes",
+                    avatar:"",
                     price:7500,
                     quantity:5,
                     description:"Very nice shoes",
