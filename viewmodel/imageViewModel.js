@@ -2,7 +2,7 @@
 var bodyParser = require("body-parser");
 var urlencodedParser = bodyParser.urlencoded({extended:false});
 var mongoose =require("mongoose");
-mongoose.connect('mongodb://tinsoft:Hidemyass2@ds030500.mlab.com:30500/tinstore');
+mongoose.connect('mongodb://uuucmrm9fp3tqciemmgr:O4wSkGwPbhhFbxFesQuP@bnqwzhcnme3b8l9-mongodb.services.clever-cloud.com:27017/bnqwzhcnme3b8l9');
 var imageSchema = new mongoose.Schema({
     url:String,
     productid:String,
