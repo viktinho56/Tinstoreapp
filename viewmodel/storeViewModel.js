@@ -17,7 +17,7 @@ var storeSchema = new mongoose.Schema({
     });
     
 var  Todo = mongoose.model('Stores',storeSchema); 
- /*var itemOne = Todo({storename:"SPL Stores",
+ var itemOne = Todo({storename:"SPL Stores",
                     storedescription:"We sellgood quality clothes",
                     logo:"",
                     email:"spl@gmail.com",
@@ -29,7 +29,7 @@ var  Todo = mongoose.model('Stores',storeSchema);
                     status:"active"}).save(function(err){
             if (err) throw err;
              console.log('store saved');
-}); */
+}); 
 module.exports = function (app) {
     //show all stores
     app.get("/api/stores",function(req,res){
