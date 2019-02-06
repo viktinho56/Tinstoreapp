@@ -16,7 +16,7 @@ var productsSchema = new mongoose.Schema({
     });
    
 var  Todo = mongoose.model('Products',productsSchema); 
-/*var itemOne = Todo({name:"Nike boots",
+var itemOne = Todo({name:"Nike boots",
                     category:"Shoes",
                     price:7500,
                     quantity:5,
@@ -28,7 +28,7 @@ var  Todo = mongoose.model('Products',productsSchema);
                     }).save(function(err){
             if (err) throw err;
              console.log('product saved');
-});*/
+});
 module.exports = function (app) {
     //show all products
      
