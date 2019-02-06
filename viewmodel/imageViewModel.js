@@ -13,7 +13,7 @@ var imageSchema = new mongoose.Schema({
     });
    
 var  Todo = mongoose.model('Images',imageSchema); 
-/*var itemOne = Todo({
+var itemOne = Todo({
                     url:"C:\Users\Toshiba\Desktop\folder\background\boot.jpg",
                     storename:"SPL Stores",
                     productid:"5c50b3d5c9931a0850761d94",
@@ -22,7 +22,7 @@ var  Todo = mongoose.model('Images',imageSchema);
                     }).save(function(err){
             if (err) throw err;
              console.log('image saved');
-});*/
+});
 module.exports = function (app) {
     //show all stores
     app.get("/api/images",function(req,res){
