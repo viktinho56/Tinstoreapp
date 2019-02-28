@@ -1,6 +1,8 @@
 var express = require("express");
 var storeViewModel = require("./viewmodel/storeViewModel");
+var buyersViewModel = require("./viewmodel/buyersViewModel");
 var bankViewModel = require("./viewmodel/bankViewModel");
+
 var productsViewModel = require("./viewmodel/productsViewModel");
 var imageViewModel = require("./viewmodel/imageViewModel");
 var  app = express();
@@ -17,6 +19,7 @@ app.get("/",function(req,res){
 });
 storeViewModel(app);
 bankViewModel(app);
+buyersViewModel(app);
 productsViewModel(app);
 imageViewModel(app);
 
